@@ -34,3 +34,7 @@ Pizza.prototype.toppingsCost = function() {
 
   return totalToppingsCost;
 }
+
+Pizza.prototype.pizzaCost = function() {
+  return this.sizeCost() + this.toppingsCost();
+}
