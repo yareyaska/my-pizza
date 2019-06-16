@@ -3,7 +3,7 @@
   body {
 
     font-family: sans-serif;
-  
+
   }
 }
 ul {
@@ -43,15 +43,26 @@ li a:hover:not(.active) {
 }
 
 
+#totalCostSpan{
+  color: green;
+
+}
+
+h1::first-letter {
+  font-size: 200%;
+  color:green;
+}
+
+
 
 .footer{
 
-    background-color: black;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 20px;
-    color: #fff;
+  background-color: black;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
 
 }
 
