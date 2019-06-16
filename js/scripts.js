@@ -16,3 +16,21 @@ Pizza.prototype.sizeCost = function() {
 
   return sizes[this.selectedSize];
 }
+
+
+Pizza.prototype.toppingsCost = function() {
+  var totalToppingsCost = 0;
+  var toppings = {
+    pepperoni: 200,
+    sausage: 200,
+    bacon: 200,
+    cheese: 200,
+    onion: 200,
+  };
+
+  this.selectedToppings.forEach(function(topping) {
+    totalToppingsCost += toppings[topping];
+  });
+
+  return totalToppingsCost;
+}
