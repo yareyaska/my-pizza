@@ -38,3 +38,28 @@ Pizza.prototype.toppingsCost = function() {
 Pizza.prototype.pizzaCost = function() {
   return this.sizeCost() + this.toppingsCost();
 }
+
+
+
+
+
+$(document).ready(function() {
+  $('#pizza-order').submit(function(event) {
+    event.preventDefault();
+  
+    var size = $("input[name=optradio1]:checked").val();
+    var toppings = [];
+
+    
+    $("input:checkbox:checked").map(function(){
+      toppings.push($(this).val());
+    });
+    
+    var userPizza = new Pizza(size,toppings);
+    var grandTotal = userPizza.pizzaCost().toFixed(2);
+
+    $('#totalCostSpan').text(grandTotal);
+
+
+  });
+});
