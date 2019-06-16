@@ -33,3 +33,34 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+
+
+.no{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #92493A  ;
+  margin-top: 10px;
+}
+
+#orderSummary {
+  display: none;
+  font-size: 25px;
+  background-color: #f07c6f;
+  margin-left: 70px;
+  padding: 10px;
+  margin-top: 15%;
+  width: 60%;
+}
+
+#pizzaCreator {
+  padding: 30px;
+
+}
+.sizeBox {
+  margin-top: 30px;
+  margin-botton: 30px;
+}
+.toppingsBox {
+  margin-top: 30px;
+}
+
