@@ -1,7 +1,8 @@
 
-function Pizza(selectedSize,selectedToppings) {
+function Pizza(selectedSize,selectedToppings,selectedCrust) {
   this.selectedSize = selectedSize;
   this.selectedToppings = selectedToppings;
+  this.selectedCrust = selectedCrust;
 }
 
 
@@ -16,6 +17,7 @@ Pizza.prototype.sizeCost = function() {
 
   return sizes[this.selectedSize];
 }
+
 
 
 Pizza.prototype.toppingsCost = function() {
@@ -35,10 +37,23 @@ Pizza.prototype.toppingsCost = function() {
   return totalToppingsCost;
 }
 
-Pizza.prototype.pizzaCost = function() {
-  return this.sizeCost() + this.toppingsCost();
+
+
+Pizza.prototype.crustCost = function() {
+  var crusts = {
+  
+    crispy: 100,
+    stuffed: 100,
+    gluten: 100
+  };
+
+  return crusts[this.selectedCrust];
 }
 
+
+Pizza.prototype.pizzaCost = function() {
+  return this.sizeCost() + this.toppingsCost() + this.crustCost();
+}
 
 
 
@@ -48,6 +63,7 @@ $(document).ready(function() {
     event.preventDefault();
   
     var size = $("input[name=optradio1]:checked").val();
+    var crust = $("input[name=me]:checked").val();
     var toppings = [];
 
     
@@ -55,7 +71,7 @@ $(document).ready(function() {
       toppings.push($(this).val());
     });
     
-    var userPizza = new Pizza(size,toppings);
+    var userPizza = new Pizza(size,toppings,crust);
     var grandTotal = userPizza.pizzaCost().toFixed(2);
 
     $('#totalCostSpan').text(grandTotal);
