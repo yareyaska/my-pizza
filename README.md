@@ -1,17 +1,17 @@
-#DELANI STUDIO
+#my-pizza
 
-#### this is a project of delani studio.
+#### this is a project of my-pizza.
 
 #### By **yussuf hussein**
 
 ## Description
-This project is a site of delani studio which contains information about the studio,what they do,services offered,contact information and how to assist u.
+This project is a site of my-pizza which contains information about my-pizza,my  work and services offered,
 
 ## Setup/Installation Requirements
 To start using this project use the following commands:
 
 * git clone
-* cd DELANI-STUDIOO
+* cd my-pizza
 * subl .
 * code .
 *Google chrome or Mozilla and internet connection(to start using the project u should have the aboved mentioned things.)
@@ -28,29 +28,18 @@ To start using this project use the following commands:
 
 
 ##Behavior Driven Development
-**Input Example**: when u visit delani studio the output should be the
+**Input Example**: when u visit my-pizza the output should be the
 
 **Output Example**: Landing page
 
-* when u visit delani studio u should land on the landing page:
+* when u visit my-pizza u should land on the landing page:
 
-**Input Example**:Click "what we do" icons
+**Input Example**:Click "order" icons
 
-**Output Example**: Descriptions pop up
+**Output Example**: an order page appears
 
-* when u click  "what we do" icons it will slide down providing more information about the page and once clicked again the description will dissapear :
+* when u click  "order" icons it will go to another page providing more information about the page. and once ur chose what size,topping and crust u want then your hit the check ur total button it will show u the total amount of things u have ordered,after ur choose what u want and u have seen ur total ur hit the click to order button wich will take u to a form document,ur required to fill the form and hit the confirm ur order button there will be a pop up saying thank u and welcome again
 
-**Input Example**: Hover over portfolio images
-
-**Output Example**: Name of project appears
-
-* when u hover over an image a white box appears with then name of the project inside. and the project image is visible in the background:
-
-**Input Example**: fill in comment form
-
-**Output Example**: information submitted
-
-* when u fill in the comment section and submit u should be seeing a pop up which says that were have received you message and also a thank u:
 
 
 

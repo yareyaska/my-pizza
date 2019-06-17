@@ -78,4 +78,18 @@ $(document).ready(function() {
 
 
   });
+   $('.but').click(function() {
+    $('.second').show();
+  
+
+
+   });
+
+   $('.bu').click(function() {
+    alert("were have received ur Order,Thank U And Welcome Once Again ")
+
+
+   });
+
+
 });
